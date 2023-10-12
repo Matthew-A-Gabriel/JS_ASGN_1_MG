@@ -1,0 +1,23 @@
+body{
+    background-color: powderblue;
+}
+
+.main_div{
+    color: white;
+    background-color: tan;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;   
+    text-align: center;
+    padding: 1%;
+    border: 0.15rem solid black;
+    border-radius: 2rem;;
+}
+
+#top_div{
+
+}
+
+#bottom_div{
+
+}
