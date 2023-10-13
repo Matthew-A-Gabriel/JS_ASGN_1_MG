@@ -23,7 +23,7 @@ input{
     font-size: 1.5rem;
 }
 
-button{
+.turn_in{
     height: 1.25rem;
     margin: 0.5rem 0% 0% 0%;
 }
@@ -36,14 +36,10 @@ p{
     font-size: 1.5rem;
 }
 
-#top_div{
-    
+#top_div{   
 margin: 4vh 0% 0% 0%;
 
 }
-
 #bottom_div{
-
 margin: 10vh 0% 0% 0%;
-
 }
