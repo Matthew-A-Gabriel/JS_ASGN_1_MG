@@ -1,70 +1,30 @@
 // changing text Veriable
 var shifting_text = document.getElementById("text_that_changes")
 
-// user input (placeholder number)
-var user_input = "5"
+// Guessing Button
+var button_1 = document.getElementById("turn_in")
 
 // RNG (placeholder number)
-var rng_number = "5"
+var rng_number = Math.floor((Math.random() * 10) + 1);    // => 1 and 11
+console.log(rng_number);
 
-// Checking System, console log are placehodlers to make sure they work and the functions need to be made, the existing one doesn't
-if(user_input > rng_number) {
-    console.log("Wrong, Too High")
-}
+// event listener
+button_1.addEventListener("click", checker);
 
-else if(user_input < rng_number) {
-    console.log("Wrong, Too Low")
-}
+function checker (){
+    // user input
+    var user_input = document.getElementById("number_input").value
 
-else if(user_input === rng_number) {
-    function changeText () {
+    // Checking System
+    if(user_input > rng_number) {
+        shifting_text.innerText= "Wrong, Too High!"
+    }
 
+    else if(user_input < rng_number) {
+        shifting_text.innerText= "Wrong, Too Low"
+    }
+
+    else{
         shifting_text.innerText= "CORRECT!"
-
     }
 }
-
-else{
-    console.log("Enexpected input, just add a number")
-}
-
-
-
-// Below this are the scrapped, didn't work so I decided to start over.//
-
-
-// Random Number Generator 1-10
-// let number = Math. floor(Math. random() * 10) + 1;
-
-// // User Input Variable
-// let input = document.getElementById("number_input");
-
-// // the changing text variable 
-// let text_change = document.getElementById("text_that_changes");
-
-// // When Input is higher than Random Number
-// if (number<input) {
-//     function changeText(){
-//     text_change.innerText = "Wrong, guess lower"
-//     } ;
-//     console.log("Wrong, guess lower");
-// }
-
-// // When Input matches the Random Number
-// else if (number === input) {
-//     function changeText(){
-//         text_change.innerText = "Correct! refresh to play again"
-//         } ;
-//     console.log("Correct! refresh to play again")
-// }
-
-// // When it is neither Matching or Higher
-// else {
-//     function change_text(){
-//         text_change.innerText = "Wrong, guess higher"
-//         } ;
-//     console.log("Wrong, guess higher")
-// }
-
-
-// note: make it so instead of Console Logs, it's changing the text thanks
